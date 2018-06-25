@@ -1,26 +1,24 @@
 <form #formpart2="ngForm" (ngSubmit)="signin(formpart2)">
    
-<fieldset>
-    <legend>Select Features</legend>
-
-    <div>
-        <input type="checkbox" id="gps" name="features"
-               value="gps"  />
-        <label for="gps">GPS</label>
-    </div>
-
-    <div>
-        <input type="checkbox" id="security lock" name="features"
-               value="security lock"  />
-        <label for="security lock">Security Lock</label>
-    </div>
-
-    <div>
-    <input type="checkbox" id="cargo mat" name="features"
-           value="cargo mat" />
-    <label for="cargo mat">Cargo Mat</label>
-</div>
-</fieldset>
+  <h5>Features</h5>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="GPS" id="GPS" ngModel name="GPS">
+    <label class="form-check-label" for="GPS">
+       GPS
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="Security Lock" id="Security Lock" ngModel name="Security Lock">
+    <label class="form-check-label" for="Security Lock">
+       Security Lock
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="Cargo Mat" id="Cargo Mat" ngModel name="Cargo Mat">
+    <label class="form-check-label" for="Cargo Mat">
+       Cargo Mat
+    </label>
+  </div>
 
 <!-- <form #formpart2="ngForm" (ngSubmit)="signin(formpart2)"> -->
   <div class="form-group row">

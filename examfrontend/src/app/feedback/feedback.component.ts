@@ -8,11 +8,18 @@ import { HttpService } from "src/app/http.service";
 })
 export class FeedbackComponent implements OnInit {
   formData = {}
+  discount = 0
   constructor(private http:HttpService) { }
 
   ngOnInit() {
     this.formData = this.http.getForm()
-    console.log(this.formData)
+    
+        var d = new Date(this.formData['date']);
+        console.log(d.getDate() % 2);
+        this.discount = d.getDate() % 2 == 0 ? 30 : 40;
+    
+    
+        console.log(this.formData)
   }
 
 }

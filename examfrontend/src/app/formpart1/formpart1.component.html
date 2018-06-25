@@ -5,17 +5,16 @@
       <input type="text" class="form-control" id="inputEmail3" placeholder="Make" ngModel name="make">
     </div>
   </div>
-  <div class="dropdown">
-    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Dropdown
-    </button>
-    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-
-        <a class="dropdown-item" href="#">Civic</a>
-        <a class="dropdown-item" href="#">Odyssey</a>
-        <a class="dropdown-item" href="#">Pilot</a>
-        <a class="dropdown-item" href="#">Accord</a>
-        <input type="text" class="form-control" id="inputEmail3" placeholder="Model" ngModel name="model">
+  <div class="form-group row">
+    <label for="inputPassword3" class="col-sm-2 col-form-label">Model</label> 
+    <div class="col-sm-4">
+      <!-- <input type="text" class="form-control" id="inputPassword3" placeholder="select" ngModel name="model"> -->
+      <select class="form-control" id="inputPassword3" placeholder="select" ngModel name="model">
+          <option value="Civic">Civic</option>
+          <option value="Odyseey">Odyseey</option>
+          <option value="Pilot">Pilot</option>
+          <option value="Accord">Accord</option>
+        </select>
     </div>
   </div>
 

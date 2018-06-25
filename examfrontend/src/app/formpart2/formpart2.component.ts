@@ -15,6 +15,19 @@ export class Formpart2Component implements OnInit {
   }
 
   signin(form){
+
+    var f = []
+    if (form.value.GPS) {
+      f.push('GPS')
+    }
+    if (form.value['Security Lock']) {
+      f.push('Security Lock')
+    }
+    if (form.value['Cargo Mat']) {
+      f.push('Cargo Mat')
+    }
+    form.value.features = f;
+
       var formpart1 = this.http.getForm()
       this.http.setForm({...formpart1,...form.value})
       this.http.postService().subscribe(
